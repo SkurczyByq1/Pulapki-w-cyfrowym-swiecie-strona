@@ -1,0 +1,54 @@
+body {
+    background: #353941;
+    background-attachment: local;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color:white;
+  text-shadow: 0 4px 4px rgba(0, 0 ,0, 0.25);
+}
+header {
+    height: 5%;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+navbar button {
+    position: relative;
+    background: none;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 25px;
+    outline: none;
+    margin-left: 60px;
+    margin-right: 60px;
+
+/* Styl dla paska animacji */
+navbar button::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #5727A3;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+/* Animacja dla paska */
+navbar button:hover::after {
+    width: 100%;
+    left: 0;
+}
