@@ -77,6 +77,13 @@ main {
     position: relative;
     height: 90vh;
     width: 100%;
+    top: 64px;
+}
+
+main div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
 }
 
 footer {

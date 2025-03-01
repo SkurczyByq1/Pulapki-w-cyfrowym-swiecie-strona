@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>Pułapki w cyfrowym świecie</title>
 </head>
 <body>
     <header>
         <navbar>
             <button id="home-btn">Strona główna</button>
-            <button id="accounts-btn">Fałszywe konta</button>
+            <button id="privacy-btn">Udostępniane dane</button>
             <button id="ai-btn">Stuczna inteligencja</button>
             <button id="viruses-btn">Wirusy</button>
             <button id="phishing-btn">Phishing</button>
@@ -21,32 +21,55 @@
     </header>
 
     <main>
-        <div id="home-page">
-
-        </div>
-        <div id="accounts-page">
-
-        </div>
-        <div id="ai-page">
-
-        </div>
-        <div id="viruses-page">
-
-        </div>
-        <div id="phishing-page">
-
+        <div id="home-page" style="z-index:8; display:block;">
+            <h1>
+                Pułapki w cyfrowym świecie
+            </h1>
         </div>
 
-        <div id="fakenews-page">
-
+        <div id="privacy-page" style="z-index:7; display:none;">
+            <h1>
+                Prywatność danych
+            </h1>
         </div>
-        <div id="addicts-page">
 
+        <div id="ai-page" style="z-index:6; display:none;">
+            <h1>
+                Stuczna inteligencja
+            </h1>
         </div>
 
-        <div id="end-page">
+        <div id="viruses-page" style="z-index:5; display:none;">
+            <h1>
+                Złośliwe oprogramowanie
+            </h1>
+        </div>
+        
+        <div id="phishing-page" style="z-index:4; display:none;">
+            <h1>
+                Phishing
+            </h1>
+        </div>
 
+        <div id="fakenews-page" style="z-index:3; display:none;">
+            <h1>
+                Fake newsy
+            </h1>
+        </div>
+
+        <div id="addicts-page" style="z-index:2; display:none;">
+            <h1>
+                Uzależnienia
+            </h1>
+        </div>
+
+        <div id="end-page" style="z-index:1; display:none;">
+            <h1>
+                Koniec
+            </h1>
         </div>
     </main>
+
+    <script src = "app.js"></script>
 </body>
 </html>
