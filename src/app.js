@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
         fakenews.style.display = 'none';
         addicts.style.display = 'none';
         end.style.display = 'none';
-        home.style.display = "block";
+        home.style.display = "grid";
     })
 
     document.getElementById('privacy-btn').addEventListener('click', function() {
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
         fakenews.style.display = 'none';
         addicts.style.display = 'none';
         end.style.display = 'none';
-        privacy.style.display = 'block';
+        privacy.style.display = 'grid';
     })
 
     document.getElementById('ai-btn').addEventListener('click', function() {
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function() {
         fakenews.style.display = 'none';
         addicts.style.display = 'none';
         end.style.display = 'none';
-        ai.style.display = 'block';
+        ai.style.display = 'grid';
     })
 
     document.getElementById('viruses-btn').addEventListener('click', function() {
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
         fakenews.style.display = 'none';
         addicts.style.display = 'none';
         end.style.display = 'none';
-        viruses.style.display = 'block';
+        viruses.style.display = 'grid';
     })
 
     document.getElementById('phishing-btn').addEventListener('click', function() {
@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', function() {
         fakenews.style.display = 'none';
         addicts.style.display = 'none';
         end.style.display = 'none';
-        phishing.style.display = 'block';
+        phishing.style.display = 'grid';
     })
 
     document.getElementById('fakenews-btn').addEventListener('click', function() {
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
         phishing.style.display = 'none';
         addicts.style.display = 'none';
         end.style.display = 'none';
-        fakenews.style.display = 'block';
+        fakenews.style.display = 'grid';
     })
 
     document.getElementById('addicts-btn').addEventListener('click', function() {
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
         phishing.style.display = 'none';
         fakenews.style.display = 'none';
         end.style.display = 'none';
-        addicts.style.display = 'block';
+        addicts.style.display = 'grid';
     })
     document.getElementById('end-btn').addEventListener('click', function() {
         home.style.display = 'none';
@@ -95,6 +95,6 @@ document.addEventListener('DOMContentLoaded', function() {
         phishing.style.display = 'none';
         fakenews.style.display = 'none';
         addicts.style.display = 'none';
-        end.style.display = 'block';
+        end.style.display = 'grid';
     })
 })
