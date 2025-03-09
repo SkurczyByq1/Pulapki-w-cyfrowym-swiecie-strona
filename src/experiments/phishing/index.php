@@ -104,6 +104,35 @@
 			ul li a:hover {
 				text-decoration: underline;
 			}
+
+			.login-btn {
+				background: none repeat scroll 0 0 #0866ff; border: none;
+				color: #ffffff;
+				padding: 2px 6px;
+				font-size: 20px;
+				font-weight: 700;
+				height: 48px;
+				width: 356px;
+			}
+
+			.login-btn:hover {
+				cursor: pointer;
+			}
+
+			.create-btn {
+				background: none repeat scroll 0 0 #42b72a;
+				border: none;
+				color: #ffffff;
+				padding: 2px 6px;
+				font-size: 17px;
+				font-weight: 700;
+				height: 48px;
+				width: 188px;
+			}
+
+			.create-btn:hover {
+				cursor: pointer;
+			}
 		</style>
 	</head>
 	<body>
@@ -118,16 +147,16 @@
 						<form action = "do_action.php">
 							<input name = "username" type = "text" id = "username" placeholder = "Adres e-mail lub numer telefonu" autofocus = "1" aria-label = "Adres e-mail lub numer telefonu" style = "padding: 0.8rem 1rem;"></input>
 							<input name = "password" id = "password" type = "password" placeholder = "Hasło" autofocus = "1" aria-labe l= "Hasło" style = "padding: 0.8rem 1rem;"></input>
-							<input type = "submit" name = "submit" value = "Zaloguj się" style = "background: none repeat scroll 0 0 #0866ff; border: none; color: #ffffff; padding: 2px 6px; font-size: 20px; font-weight: 700; height: 48px; width: 356px;"></input>
+							<input type = "submit" name = "submit" value = "Zaloguj się" class = "login-btn"></input>
 							<p><a style = "text-decoration: none; color: #0866ff; font-size: 14px;" href = "">Nie pamiętasz hasła?</a></p>
 							<div class = "card-deco"></div>
 							<div style = "width: 100%; height: 100%; display: flex; justify-content: center; align-items: center;">
-								<input type = "submit" name = "submit" value = "Utwórz nowe konto" style = "background: none repeat scroll 0 0 #42b72a; border: none; color: #ffffff; padding: 2px 6px; font-size: 17px; font-weight: 700; height: 48px; width: 188px;"></input>
+								<input type = "submit" name = "submit" value = "Utwórz nowe konto" class = "create-btn"></input>
 							</div>
 						</form>
 					</div>
 				</div>
-				<p style = "font-size: 14px;"><a href = "#" style = "color: #000000; font-weight: 700; text-decoration: none;">Utwórz stronę</a> dla gwiazdy, marki lub firmy.</p>
+				<p style = "font-size: 14px; display: flex; align-items: center; justify-content: center; margin-left: 2px;"><a href = "#" style = "color: #000000; font-weight: 700; text-decoration: none; margin-right: 4px;">Utwórz stronę</a>dla gwiazdy, marki lub firmy.</p>
 			</div>
 		</section>
 	</body>

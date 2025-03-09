@@ -87,6 +87,7 @@ document.addEventListener('DOMContentLoaded', function() {
         end.style.display = 'none';
         addicts.style.display = 'grid';
     })
+
     document.getElementById('end-btn').addEventListener('click', function() {
         home.style.display = 'none';
         privacy.style.display = 'none';
@@ -96,5 +97,9 @@ document.addEventListener('DOMContentLoaded', function() {
         fakenews.style.display = 'none';
         addicts.style.display = 'none';
         end.style.display = 'grid';
+    })
+
+    document.getElementById('phishing-page-btn').addEventListener('click', function() {
+        window.location.href = './experiments/phishing/index.php';
     })
 })

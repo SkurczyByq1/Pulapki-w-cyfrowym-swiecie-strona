@@ -19,7 +19,7 @@ body {
     text-shadow: 0 4px 4px rgba(0, 0 ,0, 0.25);
 }
 
-h1{
+h1 {
     text-align: left;
     font-size: 3rem;
     font-weight: 700;
@@ -30,14 +30,23 @@ p {
     text-align: left;
     font-size: 1.5rem;
     font-weight: 400;
-    padding: 0 0 0 1.25%;
+    padding: 0 0 0 2.25%;
     line-height: 32px;
 }
 
 ul {
-    padding: 0 0 0 1.25%;
+    padding: 0 0 0 2.25%;
     line-height: 32px;
     margin: 24px 0 24px 48px;
+}
+
+.divider {
+    height: 42px;
+    width: 6px;
+    background: #8250DF;
+    box-shadow: 0 0 60px #8250DF;
+    border-radius: 64px;
+    margin: 0 16px 0 0;
 }
 
 header {
@@ -94,6 +103,43 @@ navbar button:hover {
     text-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
 }
 
+
+.exp-btn {
+    width: 200px;
+    height: 64px;
+    background: #202020;
+    border: none;
+    color: #ffffff;
+    font-size: 1.125rem;
+    font-weight: 500;
+    transition: width 0.3s ease, left 0.3s ease;
+    position: relative;
+    margin: 32px 0 0 26px;
+}
+
+.exp-btn::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 4px;
+    background: #8250DF;
+    transition: width 0.3s ease, left 0.3s ease;
+    box-shadow: 0 0 60px #8250DF;
+}
+
+.exp-btn:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.exp-btn:hover {
+    cursor: pointer;
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.5);
+    transition: 0.1s;
+}
+
 main {
     position: relative;
     height: 90vh;
@@ -124,18 +170,19 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     padding: 0 2.5%;
 }
 
-img{
-    width:100%;
+.foto img {
+    width: 100%;
+    margin: 16px 0 16px 0;
 }
-
 
 footer {
     background: #141414;
     height: 4vh;
-    position: relative;
+    position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
