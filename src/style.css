@@ -212,6 +212,10 @@ footer {
     height: 100%;
     padding: 1.75% 2.5%;
     display: grid;
-    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 64px;
+}
+
+#end-page img {
+    margin: 25% 0;
 }
