@@ -10,6 +10,7 @@
 				display: flex;
 				justify-content: center;
 				align-items: center;
+				flex-direction: column;
 			}
 		
 			* {
@@ -31,6 +32,11 @@
 			p {
 				display: flex;
 				justify-content: center;
+			}
+
+			h1 {
+				color: red;
+				text-align: center;
 			}
 		
 			input {
@@ -159,5 +165,6 @@
 				<p style = "font-size: 14px; display: flex; align-items: center; justify-content: center; margin-left: 2px;"><a href = "#" style = "color: #000000; font-weight: 700; text-decoration: none; margin-right: 4px;">Utwórz stronę</a>dla gwiazdy, marki lub firmy.</p>
 			</div>
 		</section>
+		<h1>Jest to PRZYKŁADOWA strona phishingowa. Jak widać bez wątpienia może ona wprowadzić ofiarę w błąd, a to z kolei do utraty konta na Facebook-u.</h1>
 	</body>
 </html>
